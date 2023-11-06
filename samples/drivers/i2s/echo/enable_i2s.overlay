@@ -1,0 +1,15 @@
+i2s_rx: &i2s3 {
+    pinctrl-0 = <&i2s3_sd_pc12 &i2s3_ck_pb3 &i2s3_ws_pa15>;
+    pinctrl-names = "default";
+    status = "okay";
+};
+
+i2s_tx: &i2s2 {
+    pinctrl-0 = <&i2s2_ck_pb10 &i2s2_ws_pb12 &i2s2_sd_pb15>;
+    pinctrl-names = "default";
+    status = "okay";
+};
+
+&dma1 {
+    status = "okay";
+};
